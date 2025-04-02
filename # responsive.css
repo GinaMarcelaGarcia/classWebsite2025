@@ -1,0 +1,26 @@
+@media screen and (max-width: 400px) {
+    .menu-button {
+            display:block;
+ 
+    }
+    #search {
+     width: 100%;
+ 
+    }
+    .main.navigation {
+     flex-wrap: wrap;
+     max-height: 0px;
+     overflow: hidden;
+    }
+    .main.navigation a {
+      min-width: 100%;
+    }
+ 
+    .logo {
+       width: 70 px;
+    }
+ 
+    }
+    .main-navigation.open {
+    max-height: 50vh; 
+    }
