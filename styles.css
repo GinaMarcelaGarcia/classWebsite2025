@@ -1,6 +1,6 @@
 :root {
     /* CSS HSL */
-    --air-superiority-blue: hsla(201, 33%, 62%, 1);
+    --air-superiority-blue: rgb(255, 255, 255);
     --isabelline: hsla(20, 33%, 95%, 1);
     --alloy-orange: hsla(26, 70%, 45%, 1);
     --black: hsla(0, 0%, 0%, 1);
@@ -13,10 +13,24 @@ body {
 }
 
 .logo {
+    .container {
+        align-items: center;
+      }
     width: 100px;
 }
 
 .main-header {
+    background-color: var(white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-wrap: wrap;
+    font-family: Silkscreen, sans-serif;
+}
+.second-header {
+
     background-color: var(--black);
     display: flex;
     justify-content: space-between;
@@ -57,10 +71,17 @@ body {
     align-self: flex-end;
 }
 .main-navigation a {
-    color: var(--isabelline);
+    color: var(--black);
     text-decoration: none;
     padding: 10px;
 }
+
+.main-navigation b {
+    color: var(white);
+    text-decoration: none;
+    padding: 10px;
+}
+
 .main-navigation a:hover {
     background-color: var(--alloy-orange);
 }
