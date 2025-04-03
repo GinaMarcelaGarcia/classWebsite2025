@@ -1,13 +1,13 @@
 :root {
     /* CSS HSL */
-    --air-superiority-blue: rgb(255, 255, 255);
+    --air-superiority-white: rgb(255, 255, 255);
     --isabelline: hsla(20, 33%, 95%, 1);
     --alloy-orange: hsla(26, 70%, 45%, 1);
     --black: hsla(0, 0%, 0%, 1);
 }
 
 body {
-    background-color: var(--air-superiority-blue);
+    background-color: var (var(--air-superiority-blue));
     margin: 0px;
     font-family: "Roboto", sans-serif;
 }
@@ -27,19 +27,23 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     flex-wrap: wrap;
-    font-family: Silkscreen, sans-serif;
+    font-family: Helvetica;
 }
 .second-header {
 
     background-color: var(--black);
+    color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 98px;
+    padding-right: 98px;
     flex-wrap: wrap;
-    font-family: Silkscreen, sans-serif;
+    font-family: Helvetica;
+    min-height: 50px;
+    
 }
+
 
 #search {
     display: flex;
