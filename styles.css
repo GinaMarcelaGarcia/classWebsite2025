@@ -44,6 +44,22 @@ body {
     
 }
 
+.banner {
+    
+    background-size: cover;
+    background-color: #fa750025;
+    color: rgb(255, 140, 0);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 45px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0);
+    height:440px;
+    margin: 0px;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+}
 
 #search {
     display: flex;
