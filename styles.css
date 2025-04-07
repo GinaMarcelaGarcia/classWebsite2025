@@ -161,12 +161,24 @@ body {
     background-color: var(--black);
 }
 
+#product button{
+    display:block;
+    padding: 12px;
+    background-color: var(--alloy-orange);
+    flex-direction: row;
+    align-content: flex-end;
+    color: var(--isabelline);
+    text-decoration:none;
+}
+
+
 .social {
     display: flex;
     flex-direction: row;
     gap: 24px;
     justify-content: center;
 }
+
 .social a {
     text-decoration: none;
     font-size: 24px;
@@ -181,6 +193,15 @@ body {
     max-width: 80vw;
     margin: auto;
 }
+  
+.slider-container img {
+    scroll-snap-align: center;
+        flex: 0 0 100%;
+        width: 24%;
+        object-fit: cover;        
+}
+
+
 #map {
     width: 100%;
 }
