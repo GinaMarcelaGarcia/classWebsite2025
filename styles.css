@@ -2,7 +2,7 @@
     /* CSS HSL */
     --air-superiority-white: rgb(255, 255, 255);
     --isabelline: hsla(20, 33%, 95%, 1);
-    --alloy-orange: hsla(26, 70%, 45%, 1);
+    --alloy-orange: rgb(255, 115, 0);
     --black: hsla(0, 0%, 0%, 1);
 }
 
@@ -19,6 +19,7 @@ body {
     width: 100px;
 }
 
+
 .main-header {
     background-color: var(white);
     display: flex;
@@ -31,8 +32,7 @@ body {
 }
 .second-header {
 
-    background-color: var(--black);
-    color: white;
+    background-color:rgba(255, 166, 0, 0.626);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -43,18 +43,20 @@ body {
     min-height: 50px;
     
 }
+.second-header:hover{
+    background-color: var(--alloy-orange);
+}
 
 .banner {
-    
-    background-size: cover;
-    background-color: #fa750025;
-    color: rgb(255, 140, 0);
+    background-size:cover;
+    background-color: rgba(255, 115, 0, 0.162);
+    color: rgb (255, 255, 255);
     padding: 10px 0;
     text-align: center;
     font-size: 1.5rem;
-    border-radius: 45px;
-    box-shadow: 0 2px 2px rgb(0, 0, 0);
-    height:440px;
+    border-radius: 0px;
+    box-shadow: 0 2px 2px rgb(193, 87, 1);
+    height: 520px;
     margin: 0px;
     text-align: center;
     align-items: flex-start;
@@ -138,19 +140,27 @@ body {
     padding: 15px;
 }
 .card-button {
-    display: block;
+    display:block;
     padding: 12px;
-    background-color: var(--black);
+    background-color: var(--alloy-orange);
+    flex-direction: row;
+    align-content: flex-end;
     color: var(--isabelline);
-    text-align: center;
-    text-decoration: none;
+    text-decoration:none;
 }
+
+.card-button:hover{
+    background-color: var(--black);
+    
+}
+
 .main-footer {
     margin-top: 2em;
     padding: 1em;
     min-height: 150px;
-    background-color: var(--alloy-orange);
+    background-color: var(--black);
 }
+
 .social {
     display: flex;
     flex-direction: row;
