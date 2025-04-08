@@ -219,6 +219,12 @@ body {
         object-fit: cover;        
 }
 
+.photos-about {
+    scroll-snap-align: center;
+        flex: 0 0 100%;
+        width: 24%;
+        object-fit: cover;    
+}
 
 #map {
     width: 100%;
