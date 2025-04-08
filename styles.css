@@ -161,14 +161,32 @@ body {
     background-color: var(--black);
 }
 
-#product button{
-    display:block;
+.product{
+
     padding: 12px;
-    background-color: var(--alloy-orange);
-    flex-direction: row;
-    align-content: flex-end;
-    color: var(--isabelline);
-    text-decoration:none;
+    border-radius: 4px;
+    background-color: orange;
+    color: var(--air-superiority-white);
+
+}
+
+.product b {
+    flex: 50px;
+    gap: 200px;
+}
+
+.Text {
+
+    color:rgb(94, 94, 94);
+    font-size: 18px;
+    text-align:justify;
+    background-color: rgba(250, 235, 215, 0.298);
+    padding: 8px;
+    font-family: Arial;
+    font-style: normal;
+    font-display:block;
+    
+
 }
 
 
