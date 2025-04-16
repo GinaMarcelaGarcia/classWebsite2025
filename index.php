@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<?php
+//include head section
+include"components/head.php";
+?>
+
+<head>
+
+    <!-- head is for metadata -->
+    <!-- title is the name of the document  -->
+    <title>Progear Hub</title>
+    <!-- icon for page -->
+    <link rel="icon" href="images/Icon-logo-10.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+   
+</head>
+
+<body>
+
+    <h2>
+        <header class="second-header">
+        <a ="Main.html">Main </a> <br>
+        <a ="Equipment.html">Equipment</a>
+        <a ="Woman.html">Woman</a>
+        <a ="Men.html">Man</a>
+        <a ="Kids.html">Kids</a>
+        <a ="Discounts.html"> Discounts</a>
+    </h2>
+        <div class="banner"> 
+        <img src="images/Banner-1-11.jpg" height="437.2">
+
+    <main>
+        <section class="featured">
+            <h2>Featured Categories</h2>
+            <div class="categories">
+                <div class="card">
+                    <img class="card-image" alt="Vomero 18" src="images/Imagenes-12.jpg">
+                    <div class="card-content">
+                        <h4>Vomero 18</h4>
+                        <p class="description">Max cushioning for the ultimate</p>
+                        <a href="#" class="card-button">Shop</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-image" alt="Racket 16"
+                        src="images/Imagenes-13.jpg">
+                    <div class="card-content">
+                        <h4>Racket 16</h4>
+                        <p class="description">Own the Court This Netball Season</p>
+                        <a href="#" class="card-button">Shop</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-image" src="images/Imagenes-14.jpg">
+                    <div class="card-content">
+                        <h4>Gel-Nimbus 27</h4>
+                        <p class="description">Feel comfort, Find calm </p> <br>
+                        <a href="#" class="card-button">Shop</a>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img class="card-image" src="images/imagenes-15.jpg">
+                    <div class="card-content">
+                        <h4>Cardio</h4>
+                        <p class="description">Selected cardio equipment</p>
+                        <a href="#" class="card-button">Shop</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-image" src="images/imagenes-16.jpg">
+                    <div class="card-content">
+                        <h4>Running</h4>
+                        <p class="description">Celsius PR1 run Reformer</p>
+                        <a href="#" class="card-button">Shop</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-image" src="images/imagenes-17.jpg">
+                    <div class="card-content">
+                        <h4>Concept 2 standard</h4>
+                        <p class="description">Cushioning for the ultimate</p>
+                        <a href="#" class="card-button">Shop</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <nav class="social">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="https://tiktok.com">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </nav>
+        <p class="copyright">&copy; Pro Grear Hub 2025. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+
+
+

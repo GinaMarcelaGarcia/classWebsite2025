@@ -1,23 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <!-- head is for metadata -->
-    <!-- title is the name of the document  -->
-    <title>Progear Hub</title>
-    <!-- icon for page -->
-    <link rel="icon" href="images/Icon-logo-10.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
-</head>
+<?php
+//include head section
+include"components/head.php";
+?>
 
 <body>
     <header class="main-header">
@@ -49,7 +36,7 @@
             <h2>Our Location</h2>
             <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.3017990638295!2d151.1926181765805!3d-33.88188041973795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2919221809%3A0x632437ffb309dcce!2s7%20Kelly%20St%2C%20Ultimo%20NSW%202007!5e0!3m2!1sen!2sau!4v1743580695994!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <h2>Get in touch</h2>
-            <form id="contact-form>
+            <form id="contact-form">
                 <label for="name">Your name</label>
                 <input type="text" id="name" name="name" placeholder="Gina Marcela">
                 <label for="email">Your email address</label>
