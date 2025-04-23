@@ -3,14 +3,14 @@
 
 <?php
 //include head section
-include "components/head.php";
+include "./components/head.php";
 ?>   
 
 <body>
 
 <?php
 // include header section
-include "components/header.php";
+include "./components/header.php";
 ?>
 
 
@@ -88,7 +88,7 @@ include "components/header.php";
 
     <?php
     // include header section
-    include "components/footer.php";
+    include "./components/footer.php";
     ?>
 
 </body>

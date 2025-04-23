@@ -1,5 +1,5 @@
 <?php
-include "src/database.php";
+include "./src/database.php";
 //handle POST request from contact form
 if ($_SERVER["REQUEST_METHOD"] == "POST") { 
     $name = $_POST ["name"];
@@ -28,14 +28,14 @@ $statement -> execute ();
 
 <?php
 //include head section
-include "components/head.php";
+include "./components/head.php";
 ?> 
 
 <body>
 
     <?php
     // include header section
-    include "components/header.php";
+    include "./components/header.php";
     ?>
 
     <main>
@@ -52,7 +52,7 @@ include "components/head.php";
                 <label for="subject">Your subject</label>
                 <input type="text:" id="subject" name="subject" placeholder="Greetings">
                 <label for="message">Your message</label>
-                <textarea id="message" name="message" cols="30" rows="5" placeholder="Hi!"></textarea>
+                <textarea id="message" name="message" cols="30" rows="5" placeholder="Hi, !"></textarea>
                 <button type="reset">Cancel</button>
                 <button type="submit">Submit</button>
             </form>
@@ -61,7 +61,7 @@ include "components/head.php";
     
     <?php
     // include header section
-    include "components/footer.php";
+    include "./components/footer.php";
     ?>
 
 </body>

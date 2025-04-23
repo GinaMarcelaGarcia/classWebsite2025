@@ -3,13 +3,13 @@
 
 <?php
 //include head section
-include "components/head.php";
+include "./components/head.php";
 ?> 
 
 
 <?php
 // include header section
-include "components/header.php";
+include "./components/header.php";
 ?>
 
 <main>
@@ -67,7 +67,7 @@ src="images/Fotos about us-20.jpg"
 
 <?php
     // include header section
-    include "components/footer.php";
+    include "./components/footer.php";
     ?>
 
 
