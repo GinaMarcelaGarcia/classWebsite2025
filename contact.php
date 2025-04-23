@@ -1,5 +1,26 @@
 <?php
 include "src/database.php";
+//handle POST request from contact form
+if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+    $name = $_POST ["name"];
+    $email= $_POST ["email"];
+    $subject= $_POST ["subject"];
+    $message= $_POST ["message"];
+    //query to insert intcontact_us table
+    $query = "
+    INSERT INTO contact_us 
+(name, email, subject, message)
+VALUES
+(?,?,?,?)
+    ";
+
+$statement= $connection -> prepare($query);
+$statement -> bind_param("ssss", $name, $email, $subject, $message);
+$statement -> execute ();
+
+
+
+}
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +49,8 @@ include "components/head.php";
                 <input type="text" id="name" name="name" placeholder="Gina Marcela">
                 <label for="email">Your email address</label>
                 <input type="email" id="email" name="email" placeholder="ginamarcela@example.com">
+                <label for="subject">Your subject</label>
+                <input type="text:" id="subject" name="subject" placeholder="Greetings">
                 <label for="message">Your message</label>
                 <textarea id="message" name="message" cols="30" rows="5" placeholder="Hi!"></textarea>
                 <button type="reset">Cancel</button>
