@@ -1,66 +1,39 @@
-<head>
-    <!-- head is for metadata -->
-    <!-- title is the name of the document  -->
-    <title>Progear Hub</title>
-    <!-- icon for page -->
-    <link rel="icon" href="images/Icon-logo-10.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
-</head>
 
+<?php
+include "./src/database.php";
+//get the products data from database
+$query = "
+SELECT
+Id,
+Name,
+Category,
+Price,
+Description,
+Image
+FROM PRODUCTS
+"; 
+$statement = $connection -> prepare ($query);
+$statement -> execute ();
+$results = $statement-> get_results
+$products = array ();
+while ($row = results -> fetch_assoc ()) {
+    array_push($products. $row);    
+}
+?> 
 
-<header class="main-header">
-    <a href="index.html">
-        <img class="logo" src="images/Logo-10.png">
-    </a>
-    <button type="button" class="menu-button">
-        <i class="fa-solid fa-bars"></i>
-    </button>
-    <form id="search">
-        <input type="search" name="search" placeholder="Search in our page">
-        <button type="submit" name="search-button">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-    </form>
+<!DOCTYPE html>
+<html>
 
-    <nav class="main-navigation"> 
+<?php
+//include head section
+include "./components/head.php";
+?>
 
-        <a href="index.html"> 
-              <i class="fa-sharp-duotone fa-solid fa-house"></i> <br/>
-            <!-- <i class="fa-solid fa-house"></i> -->
-            Home
-        </a>
-     
-        <a href="products.html">
-            <i class="fa-sharp fa-solid fa-headphones"></i> <br/>
-            Products
-           
-        </a>
-    
+<?php
+// include header section
+include "./components/header.php";
+?>
 
-        <a href="about.html">
-            <i class="fa-sharp fa-solid fa-face-smile"></i> <br/>
-        About Us
-        </a>
-
-      
-        <a href="contact.html">
-        <i class="fa-sharp fa-solid fa-phone"></i> <br/>    
-        Contact
-        </a>
-
-
-    </nav>
-
-</header>
 
 <h2>
     <header class="second-header">
@@ -77,6 +50,20 @@
     <main>
         <section class="Products">
             <h2>Products</h2>
+            
+    <?php
+    // output products
+    foreach ($products as $p) {
+        $image =$p ["image"];
+        echo "
+        <div class="card">
+        <img src="images/$p["image]">
+        "
+        
+        <img src="images/$p["image]">
+        </div>
+        ';
+    }        
 
     </main>
 

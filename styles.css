@@ -244,3 +244,8 @@ body {
     display: block;
     width: 100%;
 }
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr ;
+}
