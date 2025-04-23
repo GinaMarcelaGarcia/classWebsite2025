@@ -50,15 +50,18 @@ include "./components/header.php";
     <main>
         <section class="Products">
             <h2>Products</h2>
-            
+
     <?php
     // output products
     foreach ($products as $p) {
         $image =$p ["image"];
+        $name= $p ["name"];
+        $description= $p ["description"];
+        $price= $p ["price"];
         echo "
-        <div class="card">
-        <img src="images/$p["image]">
-        "
+        <div class='card'>
+        <img class= 'card-image' src='images/$image'>
+        <div 
         
         <img src="images/$p["image]">
         </div>
