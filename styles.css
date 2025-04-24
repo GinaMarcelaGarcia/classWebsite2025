@@ -245,7 +245,22 @@ body {
     width: 100%;
 }
 
-.product {
+.products {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    max-width: 1000px;
+    margin: auto;
+}
+.product-name{
+color: brown;
+}
+
+.product-price{
+    color: brown;
+}
+
+.card {
+padding: 15px;
+background-color: antiquewhite;
 }
