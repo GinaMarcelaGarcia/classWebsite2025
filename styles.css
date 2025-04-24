@@ -43,8 +43,8 @@ body {
     min-height: 50px;
     
 }
-.second-header:hover{
-    background-color: var(--alloy-orange);
+.second-header {
+    background-color: black
 }
 
 .banner {
@@ -253,14 +253,14 @@ body {
     margin: auto;
 }
 .product-name{
-color: brown;
+color: white;
 }
 
 .product-price{
-    color: brown;
+    color: orange;
 }
 
 .card {
 padding: 15px;
-background-color: antiquewhite;
+background-color: orange;
 }

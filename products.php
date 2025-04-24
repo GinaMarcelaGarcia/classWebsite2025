@@ -33,12 +33,12 @@ include "./components/head.php";
 
 <h2>
         <header class="second-header">
-        <a href="Main.html">Main </a> <br>
-        <a href="Equipment.html">Equipment</a>
-        <a href="Woman.html">Woman</a>
-        <a href="Men.html">Man</a>
-        <a href="Kids.html">Kids</a>
-        <a href="Discounts.html"> Discounts</a>
+        <a ="Main.html">Main </a> <br>
+        <a ="Equipment.html">Equipment</a>
+        <a ="Woman.html">Woman</a>
+        <a ="Men.html">Man</a>
+        <a ="Kids.html">Kids</a>
+        <a ="Discounts.html"> Discounts</a>
     </h2>
         <div class="banner"> 
         <img src="images/Banner-1-11.jpg" height="437.2">
@@ -58,8 +58,9 @@ include "./components/head.php";
                 echo "
                 <div class='card'>
                     <img class='card-image' src='./images/$image'>
+
                     <div class='card-content'>    
-                    <h4 class='product-name' > Name: $name</h4>
+                    <h4 class='product-name' > Name: $name </h4>
                         <h5 class='product-price' >Price: $$price</h5>
                         <p>$description</p>
                     </div>
