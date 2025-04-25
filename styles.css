@@ -253,14 +253,14 @@ body {
     margin: auto;
 }
 .product-name{
-color: white;
+color: brown
 }
 
 .product-price{
-    color: orange;
+    color: rgb(217, 141, 0);
 }
 
 .card {
 padding: 15px;
-background-color: orange;
+background-color: rgb(255, 229, 181); 
 }
